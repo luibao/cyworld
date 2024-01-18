@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /* wrapper__header, game__container*2 총 3개의 자식박스 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    border: 1px solid green;
+}
+
+.wrapper__header{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    /* 글씨크기 다름, 같은줄에 보이기위해 적용 */
+
+}
+.title{
+    color: #55B2E4;
+    font-size: 17px;
+    font-weight: 600;
+}
+.subtitle{
+    font-size: 13px;
+    padding-left: 5px;
+}
+.divideLine{
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.game__container{
+    width: 222px;
+    height: 168px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+.game__title{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.game__subtitle{
+    font-size: 13px;
+    color: gray;
+    font-weight: 600;
+}
+
+.word__result{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.word__text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textbox{
+    width: 130px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.search{
+    font-size: 11px;
+    font-weight: 700;
+    width: 38px;
+    height: 24px;
+}
+
+.search2{
+    background-color: white;
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+    border-radius: 10px;
+    width: 70px;
+    height: 25px;
+}
+
+.wrap__number{
+    border: 1px solid black;
+    width: 140px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.lotto__number{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
+}

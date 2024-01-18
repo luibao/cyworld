@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* iframe태그 -> home.html을 불러옴. */
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+/* body태그의 부모태그 - html태그 */
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    /* 부모태그가 있어야 제대로 표시가된다 % 너비같은경우 */
+    width: 100%; 
+    height: 100%;
+    /* background-color: aqua; */
+    padding : 20px; /*상 우 하 좌 순서대로*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*끝에 붙여준다. 밑에 고정*/
+}
+
+.wrapper__header{
+    width: 100%;
+    height: 48px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 48px를 넘어서 내용이 넘어가면 삐져나오게 되는 문제
+    --> css에 배운다;;ㅠㅠ
+     */
+}
+
+.contents__title{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    /* justify-content: flex-end; x 세로정렬해야함 align-items*/
+    align-items: center; 
+}
+
+.title{
+
+    color: #55B2E4;
+    font-size: 15px;
+    font-weight: 700;
+    /* 오른쪽 내부여백, 외부여백 ㅇㅇ */
+}
+
+.subtitle{
+    font-size: 11px;
+/* 왼쪽 내부여백, 외부여백 ㅇㅇ 둘다가능 */
+    padding-left: 5px;
+}
+
+.divideLine{
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.contents__body{
+    font-size: 13px;
+    color: gray;
+}
+
+
+.wrapper__body{
+    width: 100%;
+    height: 270px;
+    /* background-color: yellowgreen; */
+     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    
+}
+
+.contents__title{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    /* justify-content: end;/*; x 세로정렬해야함 align-items */
+    /* align-items: start;  */
+}
+
+.video{
+    width: 100%;
+    height: 240px;
+    background-color: #C4C4C4;
+    margin-top: 15px;
+}

@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    /* background-color: bisque; */
+    padding: 20px 0px 0px 20px;
+    background-image: url("../images/background.png");
+}
+
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    /* background-color: tomato; */
+    background-image: url("../images/outerbox.png");
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    /* background-color: rebeccapurple; */
+    padding: 32px 0px 0px 32px;
+    
+}
+
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        align-items: center;
+    
+
+}
+
+.wrapper__left__header{
+    width: 100%;
+    height: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.today{
+    font-size: 13px;
+    /* css는 상속된다 span태그 다 적용 */
+
+}
+
+
+.wrapper__left__body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+/*  나는 flex-start로 해야 적용이되는데
+왜안쪽에 적용이안되지?*/
+    padding: 20px 30px;
+}
+
+.left__body__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 추가적인 정렬옵션안주는이유 */
+    /* 상위윗부분에서 정렬을해줌.(body) */
+}
+
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+
+.left__body__header__line{
+    border-top: 1px dotted black;
+    /* hr 대신에 css속성으로 사용 */
+    /* 여백필요 위쪽, 아래쪽 */
+    margin: 12px 0px;
+}
+
+.left__body__profile{
+    border-bottom: 1px dotted black;
+    margin: 12px 0px;
+    display: flex;
+    flex-direction:  column;
+    /* 블록요소 줄바꿈처럼 보인것일뿐 정렬을 지정해줘야한다. */
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+    width: 100%;
+    height: 100%;
+    /* height : 100%가 적용이되지않음;; ㅠㅠ */
+}
+/* .flexcustom{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+} */
+
+.profile__detail{
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-solid{
+    color: black;
+    margin-right: 15px;
+    width: 5px;
+    height: 5px;
+}
+.fa-regular{
+    color: black;
+    margin-right: 15px;
+    width: 5px;
+    height: 5px;
+}
+
+
+.left__body__footer{
+    /* border-top: 1px dotted black; */
+    margin: 100px 0px;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.wrapper__feel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center;
+    width: 100%;
+
+}
+.feel_title{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: 600;
+}
+
+.feel__select{
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
+
+
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    padding-left: 5px;
+
+}
+
+.wrapper__right__header{
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 14px;
+    
+}
+
+.right__header__title, .right__header__setting{
+    color: #55B2E4;
+    font-size: 11px;
+}
+
+.right__header__title{
+    font-size: 16px;
+    /* 코드는 ㄴ위에서부터 아래로 읽이 때문에 재할당이 된다..
+    부모?자식? 이런것보다;
+    */
+}
+
+.wrapper__right__body{
+    width:510px;
+    height: 445px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
