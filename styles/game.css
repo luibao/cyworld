@@ -103,21 +103,28 @@ html, body{
     font-size: 13px;
     font-weight: 700;
     color: black;
-    border-radius: 10px;
-    width: 70px;
-    height: 25px;
+    border-radius: 7px;
+    width: 62px;
+    height: 24px;
+    border: 1px solid black;
 }
 
 .wrap__number{
     border: 1px solid black;
-    width: 140px;
-    height: 20px;
+    width: 131px;
+    height: 21px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: #ffe400;
+
+    font-size: 13px;
+    font-weight: 700;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding:  5px 8px;
+    margin-top: 10px;
+    margin-bottom: 11px;
     /* align-items: center; */
 }
 
